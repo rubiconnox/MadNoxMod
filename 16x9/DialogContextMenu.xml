@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol>1000</defaultcontrol>
+<controls>
+			<include>AnimationDialogPopupWindow</include>
+			<include>DialogBackgroundFade</include>
+	<control type="image" id="999">
+		<width>500</width>
+		<height>1040</height>
+		<texture colordiffuse="$VAR[PanelStyleColorVar]" border="30">$VAR[DialogStyleVar]</texture>
+	</control>
+		<control type="grouplist" id="996">
+			<width>500</width>
+			<height max="1000">auto</height>
+			<left>20</left>
+			<usecontrolcoords>true</usecontrolcoords>
+			<include>ContainerScrollTime</include>
+		<control type="image">
+				<top>-20</top>
+				<include>DialogHorizontalSeparator</include>
+		</control>	
+	<control type="button" id="2007">
+				<include>DialogButtonContextMenu</include>
+				<label>$LOCALIZE[31976]</label>
+				<visible>Container.Content(artists) | Container.Content(actors) | Container.Content(directors)</visible>
+				<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.Label],return)</onclick>
+	</control>
+		<control type="button" id="2009">
+				<include>DialogButtonContextMenu</include>
+				<label>$LOCALIZE[31976]</label>
+				<visible>Container.Content(albums) | Container.Content(songs)</visible>
+				<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.Artist] $INFO[ListItem.Label],return)</onclick>
+		</control>	
+	</control>	
+		<control type="button" id="1000">
+			<include>DialogButtonContextMenu</include>
+		</control>	
+	</controls>	
+</window>
