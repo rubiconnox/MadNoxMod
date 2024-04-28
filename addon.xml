@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="skin.madnox" version="21.0.0" name="Madnox" provider-name="RubiconMod">
+<addon id="skin.madnox" version="21.0.0" name="Madnox" provider-name="rubiconnox">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" version="2.0.1" />
